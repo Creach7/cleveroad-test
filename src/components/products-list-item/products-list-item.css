@@ -1,0 +1,14 @@
+.products-list-item__photo {
+  width: 100%;
+}
+
+.products-list-item__container {
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-list-item__line-through {
+  text-decoration: line-through;
+}
