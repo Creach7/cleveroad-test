@@ -11,7 +11,8 @@ export default function AddProduct() {
   }
   const disRef = React.createRef();
   const onSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+    console.dir(e);
   }
   return (
     <form className='container' onSubmit={onSubmit}>
@@ -36,7 +37,7 @@ export default function AddProduct() {
         }
       } />
       <label>Описание</label>
-      <input name='description' type='text' maxLength='200' />
+      <textarea name='description' type='text' maxLength='200' />
       <label>Цена</label>
       <input name='price' type='number' required min='0' max='99999999.99' />
       <label>Скидка</label>
