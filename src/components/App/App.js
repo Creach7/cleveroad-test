@@ -1,7 +1,9 @@
+import AddProduct from "../add-product/add-product";
+
 function App() {
   return (
     <div className="App">
-      hello
+      <AddProduct/>
     </div>
   );
 }
