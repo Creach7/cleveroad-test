@@ -25,9 +25,9 @@ export default function Authorization() {
       'display': 'flex',
       'flexDirection': 'column'
     }} onSubmit={onSubmit}>
-      <label>Email</label>
+      <p>Email</p>
       <input name='email' type='email' required />
-      <label>Password</label>
+      <p>Password</p>
       <input name='password' type='password' required />
       <button>Sign in</button>
     </form>

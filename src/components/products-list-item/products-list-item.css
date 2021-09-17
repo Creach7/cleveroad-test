@@ -1,9 +1,17 @@
+.products-list-item__photo-container{
+  width: 280px;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .products-list-item__photo {
   width: 100%;
 }
 
 .products-list-item__container {
-  width: 200px;
+  width: 280px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;

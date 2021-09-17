@@ -16,9 +16,9 @@ export default function AddProduct() {
   }
   return (
     <form className='container' onSubmit={onSubmit}>
-      <label>Заголовок</label>
+      <p>Заголовок</p>
       <input name='heading' type="text" required minLength='20' maxLength='40' />
-      <label>Фото</label>
+      <p>Фото</p>
       <input name='photo' type='file' alt='image' required accept='image/*' onChange={
         (e) => {
           const imgCheck = (wh) => (wh >= 200 && wh <= 4000);
@@ -36,11 +36,11 @@ export default function AddProduct() {
           fr.readAsDataURL(e.target.files[0]);
         }
       } />
-      <label>Описание</label>
+      <p>Описание</p>
       <textarea name='description' type='text' maxLength='200' />
-      <label>Цена</label>
+      <p>Цена</p>
       <input name='price' type='number' required min='0' max='99999999.99' />
-      <label>Скидка</label>
+      <p>Скидка</p>
       <input name='discount-percent' type='number' min='10' max='90' onChange={
         (e) => {
           if ((e.target.value !== '') !== (disRef.current.required)) {
@@ -48,7 +48,7 @@ export default function AddProduct() {
           }
         }
       } />
-      <label>Дата окончания скидки</label>
+      <p>Дата окончания скидки</p>
       <input name='discount-end-date' type='date' min={getMinDate()} ref={disRef} />
       <button>Добавить продукт</button>
     </form>
