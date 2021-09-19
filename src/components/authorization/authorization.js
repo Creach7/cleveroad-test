@@ -18,6 +18,7 @@ export default function Authorization() {
         const errorCode = error.code;
         const errorMessage = error.message;
         alert('Неправельный email или пароль');
+        console.log(errorCode, errorMessage);
       });
   }
   return (
