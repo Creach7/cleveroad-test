@@ -1,25 +1,21 @@
 import React from 'react';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-export default function Authorization() {
+import { userUpdate, pageChanged } from '../../redux/actions';
+import { connect } from 'react-redux';
+
+import { signIn } from '../../firebase/firebase';
+
+function Authorization({ userUpdate, pageChanged }) {
   const onSubmit = (e) => {
     e.preventDefault();
-    // console.dir(e);
-    // console.log(e.target[0].value);
-    // console.log(e.target[1].value);
-    const auth = getAuth();
-    signInWithEmailAndPassword(auth, e.target[0].value, e.target[1].value)
-      .then((userCredential) => {
-        // Signed in 
-        const user = userCredential.user;
-        console.dir(user);
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        alert('Неправельный email или пароль');
-        console.log(errorCode, errorMessage);
-      });
+    const successFun = (user) => {
+      // console.dir(user);
+      userUpdate(user);
+      pageChanged('ProductsList')
+    }
+    const errorFun = () => {
+      alert('Неправельный email или пароль');
+    }
+    signIn(e.target[0].value, e.target[1].value, successFun, errorFun);
   }
   return (
     <form style={{
@@ -34,3 +30,13 @@ export default function Authorization() {
     </form>
   );
 }
+const mapStateToProps = () => {
+  return {
+
+  };
+}
+const mapDispatchToProps = {
+  userUpdate,
+  pageChanged
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Authorization);

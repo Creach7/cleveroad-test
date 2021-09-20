@@ -1,5 +1,6 @@
-import './edit-pruduct.css';
+import './edit-product.css';
 import React from 'react';
+
 export default function EditProduct() {
   const getMinDate = () => {
     const D = new Date();
