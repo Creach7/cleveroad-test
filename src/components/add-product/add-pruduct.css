@@ -1,10 +1,30 @@
-.container{
+.add-product__page {
+  width: 720px;
+}
+
+.add-product__container {
   display: flex;
   flex-direction: column;
+  margin-left: 25px;
 }
-input:invalid:required{
+
+.add-product__container button {
+  margin-top: 16px;
+  width: fit-content;
+  align-self: center;
+}
+
+input:invalid:required {
   border: 2px solid red;
 }
-input:valid{
+
+input:valid {
   border: 2px solid black;
+}
+
+.add-product__close_button {
+  /* position: absolute;
+  top: 0px;
+  right: 0px; */
+  float: right;
 }

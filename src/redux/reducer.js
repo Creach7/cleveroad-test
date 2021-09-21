@@ -1,7 +1,9 @@
 const initialState = {
   products: [],
   page: 'Authorization',
-  user: ''
+  // page: 'ProductsList',
+  user: '',
+  productInfo: {}
 }
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -19,6 +21,11 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         products: action.payload
+      }
+    case 'EDIT_PRODUCT':
+      return {
+        ...state,
+        productInfo: action.payload
       }
     default:
       return state;

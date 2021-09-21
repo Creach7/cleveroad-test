@@ -5,6 +5,8 @@ import ProductsList from "../products-list/products-list";
 // import { app, analytics } from '../../firebase/firebase.js';
 import { connect } from 'react-redux';
 
+import './App.css';
+
 function App({ page }) {
   const Pages = () => {
     switch (page) {
@@ -17,7 +19,7 @@ function App({ page }) {
       case 'ProductsList':
         return <ProductsList />;
       default:
-        return <div></div>
+        return <div></div>;
     }
   }
   return (

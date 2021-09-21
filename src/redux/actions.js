@@ -19,8 +19,16 @@ const productsUpdate = (products) => {
   }
 };
 
+const editProduct = (productInfo) => {
+  return {
+    type: 'EDIT_PRODUCT',
+    payload: productInfo
+  }
+};
+
 export {
   pageChanged,
   userUpdate,
-  productsUpdate
+  productsUpdate,
+  editProduct
 }

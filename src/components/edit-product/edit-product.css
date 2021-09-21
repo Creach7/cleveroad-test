@@ -1,10 +1,36 @@
-.container{
+.edit-product__page {
+  width: 720px;
+}
+
+.edit-product__container {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  margin-left: 25px;
 }
-input:invalid:required{
+
+.edit-product__container a {
+  /* margin-top: 16px; */
+  margin-bottom: 16px;
+}
+
+.edit-product__container button {
+  margin-top: 16px;
+  width: fit-content;
+  align-self: center;
+}
+
+input:invalid:required {
   border: 2px solid red;
 }
-input:valid{
+
+input:valid {
   border: 2px solid black;
+}
+
+.edit-product__close_button {
+  /* position: absolute;
+  top: 0px;
+  right: 0px; */
+  float: right;
 }

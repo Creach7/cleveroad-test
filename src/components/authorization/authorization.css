@@ -1,0 +1,14 @@
+.authorization__page {
+  width: 720px;
+}
+
+.authorization__page form {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorization__page form button {
+  margin-top: 16px;
+  width: fit-content;
+  align-self: center;
+}
