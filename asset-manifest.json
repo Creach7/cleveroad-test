@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cleveroad-test/static/css/main.ab0f6995.chunk.css",
-    "main.js": "/cleveroad-test/static/js/main.1ba4f20c.chunk.js",
-    "main.js.map": "/cleveroad-test/static/js/main.1ba4f20c.chunk.js.map",
+    "main.js": "/cleveroad-test/static/js/main.f4d8e96c.chunk.js",
+    "main.js.map": "/cleveroad-test/static/js/main.f4d8e96c.chunk.js.map",
     "runtime-main.js": "/cleveroad-test/static/js/runtime-main.ebb0b853.js",
     "runtime-main.js.map": "/cleveroad-test/static/js/runtime-main.ebb0b853.js.map",
     "static/js/2.3527b342.chunk.js": "/cleveroad-test/static/js/2.3527b342.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ebb0b853.js",
     "static/js/2.3527b342.chunk.js",
     "static/css/main.ab0f6995.chunk.css",
-    "static/js/main.1ba4f20c.chunk.js"
+    "static/js/main.f4d8e96c.chunk.js"
   ]
 }
