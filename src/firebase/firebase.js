@@ -33,7 +33,7 @@ function signIn(email, password, successFun, errorFun) {
       // Signed in 
       const user = userCredential.user;
       // ...
-      console.dir(auth);
+      // console.dir(auth);
       successFun(user);
     })
     .catch((error) => {
@@ -160,7 +160,7 @@ async function addProduct(product, fun) {
     console.log("Document written with ID: ", docRef.id);
     loadImage(docRef.id, ph, (downloadURL) => {
       // product.photo = downloadURL;
-      console.log(downloadURL);
+      // console.log(downloadURL);
       updateProduct(docRef.id, { photo: downloadURL });
     });
     fun();

@@ -8,10 +8,9 @@ import { getProducts } from '../../firebase/firebase';
 import { productsUpdate, pageChanged } from '../../redux/actions';
 
 function ProductsList({ products, productsUpdate, pageChanged }) {
-  getProducts(productsUpdate);
   useEffect(() => {
-    console.log('ProductsList');
-
+    // console.log('ProductsList');
+    getProducts(productsUpdate);
   }, []);
   return (
     <div className={'product-list__page'}>
